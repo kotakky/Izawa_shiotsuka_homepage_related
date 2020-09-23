@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html lang=”ja”>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="University of Tokyo, Kamijo Laboratory, Website">
+<meta name="keywords" content="Kamijo Laboratory,Kamijo Shunsuke,University of Tokyo,ITS,Autonomous Driving,GPS">
+<title>Research Outline - Kamijo Lab, University of Tokyo: ITS, Autonomous Driving, GPS</title>
+<link rel="stylesheet" type="text/css" href="css/e_base.css">
+<link rel="stylesheet" type="text/css" href="css/research.css">
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="container">
+    <div id="header">
+      <a href="e_index.html" title="Kamijo Laboratory"><h1>Kamijo Laboratory</h1></a>
+      <ul id="gmenu">
+          <li><a href="e_research.html">Research</a></li>
+          <!--<li><a href="research/stmrf.html">S-T MRF‹Zp</a></li>-->
+          <li><a href="e_publications.html">Publications</a></li>
+          <li><a href="e_access.html">Access</a></li>
+          <li><a href="e_linkforstudents.html">Links</a></li>
+          <li><a href="e_linkforcommittee.html">Committees</a></li>
+      </ul>
+      <ul id="smenu">
+        <li><a href="research.html">Japanese</a></li>
+        <li> </li>
+      </ul>
+    </div><!-- /#header -->
+
+    <div id="research" style="margin-top:20px;">
+	
+	<div class="area">Personal Mobility and Location Based Services</div>
+
+        <div class="theme", id="smart devices"></div>
+        <div class="detail">
+
+          <div class="title"><a href="pdr/index.html">Pedestrian Self-localization Using Mobile Devices</a> 2012~</div>
+          <div class="abstract">
+          Pedestrian dead reckoning (PDR) method detects walking action such as step size and direction and cumulates relative movements. Integrating PDR with GPS, we realize more accurate pedestrian self-localization.</div>
+          
+          <div class="title"><a href="localization/wifi_fp.html">Self-localization using Wi-Fi Fingerprint technology</a> 2015~</div>
+          <div class="abstract">For the calibration of WiFi-Fingerprinting, GNSS measurements are usually used as reference data. We use our 3D-GNSS method for the calibration and aim to improve WiFI-fingerprinting accuracy.</div>
+
+		  <div class="title"><a href="wearable/index.html">Pedestrian Navigation utilizing Wearable Devices</a> 2016~</div>
+          <div class="abstract">We use our pedestrian self-localization approach and image matching technique on "Eyeglass-type wearable device" to realize more accurate pedestrian self-localization. In addition, we use AR technology and aim to provide new navigation experience.</div>
+
+		  <div class="title"><a href="DDR/index.html">Driving Data Recording (DDR) system </a> 2016~</div>
+          <div class="abstract"><div>
+		  
+        </div>
+		
+		<div class="image">
+          <img src="wearable/img/WP01.jpg" height="140"/>
+          <img src="images/pdr.jpg" height="140"/>
+        </div>
+	
+      <div class="area">Autonomous Driving</div>
+
+        <div class="theme", id="self_localization">Self-localization</div>
+        <div class="detail">For autonomous driving, ITS and smart-phone applications, it is significant to know the accurate self location. We focus on self-localization in urban canyons and are aiming to establish self-localization methods with high accuracy utilizing GNSS such as GPS and on-board/smart-phone sensors such as an inertial sensor.
+
+          <div class="title"><a href="gps/index.html">GNSS Error Correction Using 3D Maps in Urban Canyons</a> 2012~</div>
+          <div class="abstract">Using 3D building map and ray-tracing simulation, our method correct multipath and non-line-of-sight (NLOS) propagation which are main error factors in urban canyons. In addition, we realize more accurate positioning using Multi-GNSS and L1-SAIF signal information.</div>
+
+          <div class="title"><a href="gps/heightaided.html">GNSS Positioning Correction Method Using Altitude Map</a> 2014~</div>
+          <div class="abstract">In GNSS measurement, there is strong correlation between vertical errors and horizontal errors. With altitude maps, we estimate vertical errors and correct horizontal error based on the vertical errors.</div>
+
+          <div class="title"><a href="localization/sensorintegration.html">Sensor Integration for Vehicle Self-Localization in Urban Environment</a> 2014~</div>
+          <div class="abstract">By integrating on-board sensors such as speed sensor and gyro sensor with GNSS measurement, we realize high-precision vehicle self-localization.</div>
+
+        </div>
+        <div class="image">
+          <img src="images/gnss_ray.jpg" height="130"/>
+          <img src="images/sensor_fusion.jpg" height="140"/>
+        </div>
+
+        <br>
+
+        <div class="theme", id="scenario_understanding">Scenario Understanding</div>
+        <div class="detail">For autonomous driving and Advanced Driving Assistant Systems (ADAS), it is essential to maintain safety for pedestrian and bicyclist. We approach various layers from pedestrian detection to behavior recognition for this theme.
+
+          <div class="title"><a href="research/pedonboard.html">Pedestrian Detection by On-board Vision Sensor</a></div>
+          Combining object detection by our <div class="abstract"><a href="research/stmrf.html">Spatio-Temporal MRF model (ST-MRF)</a> and classification algorithms using HOG feature etc., our system extract pedestrians from on-board camera images.</div>
+
+          <div class="title"><a href="sensing/poseestimation.html">Recognition and Pose Estimation of Urban Road Users from On-board Cameras</a></div>
+          <div class="abstract">We propose behavior analysis framework which classify pedestrian and bicyclist and estimate head and body orientations which represent the direction of attention and movement using HOG, SVM and constraints.</div>
+
+          <div class="title"><a href="rssi/index.html">Pedestrian Detection Using RSSI</a> 2011~2015</div>
+          <div class="abstract">From Received Signal Strength Indicator (RSSI) of V2P communication, our system estimate pedestrian positions relative to the vehicle.</div>
+
+          <div class="title"><a href="sensing/pedbehavior.html">Pedestrian Behavior Recognition at Signalized Intersections</a> 2014~</div>
+          <div class="abstract">With a probabilistic model considering contexts in signalized intersections, our system recognize pedestrian intention to cross crosswalks.</div>
+
+        </div>
+        <div class="image">
+          <img src="research/image/pedonboard/L075_02-001_15f_VGA.jpg" height="150"/>
+          <img src="images/head_body_orientation.PNG" height="150"/>
+          <img src="images/pedestrian_behavior.png" height="150"/>
+        </div>
+
+        <br>
+
+        <div class="theme", id="3d_map">3D Map</div>
+        <div class="detail">3D maps are indispensable for self-localization technology such as camera and laser based ones and our 3D-GNSS. Accuracy of the maps affects on results of the self-localization. We are working on 3D map generation and correction methods.
+
+          <div class="title"><a href="map/reconstruction_pc_2d.html">3D Building Map Reconstruction by Integrating Point Cloud with 2D  Map</a> 2014~</div>
+          <div class="abstract">We are developing methods to extract building boundaries from huge point cloud data by MMS and  generate 3D map consisting of necessary and sufficient information.</div>
+
+          <div class="title"><a href="map/correction_gnss.html">Correction of Building Footprint for 3D City Models using GNSS Measurement</a> 2014~</div>
+          <div class="abstract">We propose a method for correcting building footprints in 3D maps utilizing our 3D-GNSS measurement system.</div>
+
+        </div>
+        <div class="image">
+          <img src="images/3d_point_cloud.JPG" height="150"/>
+          <img src="images/3D_flame_map.jpg" height="150"/>
+        </div>
+
+      <br>
+
+      <div class="area">Traffic Infrastructure</div>
+      
+        <div class="theme">Traffic Surveillance</div>
+        <div class="detail">
+          In recent years, a lot of surveillance cameras are set in road environment and traffic flow measurements and traffic event detections are conducted. We have carried out researches for technologies which automatically extract intended information without human work.
+
+          <div class="title"><a href="research/ts.html">Traffic Analysis System</a></div>
+          <div class="abstract">We developed systems which automatically obtain information such as average speed and traffic density by our tracking algorithm robust to occlusion.</div>
+
+          <div class="title"><a href="research/rt.html">Rule Based Real-time Event Detection System</a></div>
+          <div class="abstract">We developed systems which detect traffic events such as accidents, jam and falling objects from image sequences. </div>
+
+        </div>
+
+        <div class="image">
+          <img src="research/image/ts/freq_path.jpg" height="150"/>
+          <img src="research/image/rt/acc_1_3.jpg" height="150"/>
+        </div>
+
+        <br>
+
+        <div class="theme">Traffic Signal Control</div>
+        <div class="detail">In the conventional traffic signal control, parameters such as cycle length and split are fixed. It causes unnecessary waiting time in off-hours. We conducted research on road vehicle cooperated signal control system.
+
+          <div class="title"><a href="signals/isc.html">Intersection Signal Control Employing Vision Sensors</a></div>
+          <div class="abstract">We proposed that our advanced vision sensor which aggregates vehicle/pedestrian measurement functions is effective for optimization of pedestrian signal splits.</div>
+
+        </div>
+
+        <div class="image">
+          <img src="signals/img/13_Hibiya.jpg" height="150"/>
+        </div>
+
+       <div class="area">Deep Learning/Multimedia System</div>
+      
+<!--         <div class="theme">Smartphone - スマートフォン</div>
+        <div class="detail">
+          当研究室ではGPSに限らず、近年多くのモバイル端末に標準的に搭載されている加速度センサ、磁気センサを用いることで、都市部でも高精度な歩行者位置推定技術の研究を行っています。ユーザーに現在位置を知らせるにとどまらず、現在位置に応じて通りがかりの店舗のセール情報を通知することなどが可能になります。
+
+          <div class="title"><a href="pdr/index.html">モバイル端末を用いた行動推定</a> 2012~</div>
+          <div class="abstract">スマートフォンに標準的に搭載されている加速度センサや磁気センサを用い、歩行動作（歩幅、進行方向）を検出し、加算的に歩行者の相対位置推定(歩行者デッドレコニングを行います。さらに、GPSとの融合により、高精度な自己位置推定を行います。</div>
+
+          <div class="title"><a href="pdr/index.html">ウェアラブル端末を用いた自己位置推定</a> 2015~</div>
+          <div class="abstract"></div>
+        </div>
+        <div class="image">
+          <img src="images/pdr.jpg" height="150"/>
+        </div> -->
+
+        <div class="theme">Surveillance Camera</div>
+        <div class="detail">
+          Recently, a huge number of surveillance cameras are set in stations and retail stores for the purpose of security and marketing. However, there is a limit to keep watching and analyze by hand. We are carrying out researches for automatic processing method for surveillance camera images.
+
+          <div class="title"><a href="demo_ped/index.html">Understanding Pedestrian Behavior in Railway Station</a> 2010~2013</div>
+          <div class="abstract">We constructed a behavior understanding framework in railway stations by combining object position and orientation.</div>
+
+          <div class="title"><a href="marketing/index.html">Customer Pose Recognition for Retail Surveillance</a> 2012~2013</div>
+          <div class="abstract">We proposed a customer pose estimation method from surveillance cameras in retail stores.</div>
+
+          <div class="title"><a href="marketing/customerbehavior.html">Customer Behavior Recognition in Retail Store</a> 2014~</div>
+          <div class="abstract">We are doing research on a method which recognizes interest and behavior to goods from surveillance</div>
+
+        </div>
+		
+		<div class="theme">Generative adversarial networks</div>
+        <div class="detail">
+
+          <div class="title"><a href="GAN/index.html">Generative adversarial networks </a> 2017~</div>
+          <div class="abstract"></div>
+
+        </div>
+		
+		<div class="image">
+			<img src="demo_ped/framework.png" height="170"/>
+			<img src="GAN/divergent.png" height="200"/>
+        </div>
+
+        <div class="area">Marketing Support</div>
+            <div class="theme", id="customer behavior">Coustomer Behavior</div>
+            <div class="detail">
+                Recently, there has been an increased demand for understanding the behavior and position of people within large-scale indoor facilities. In this research, we propose an low-cost system to determine a person's activity and indoor positioning using only smartphone sensors (accelerometer and gyroscope).
+                <div class="title"><a href="behavior/index.html">Customer Behavior Analysis using Indoor Position Information and Human Activity Recognition</a> 2015~</div>
+                <div class="abstract">We constructed a behavior understanding system appied in mobile phone</div>
+             </div>
+
+            <div class="theme" , id="customer interest">Coustomer Interest</div>
+            <div class="detail">
+                Conventionally, retailers hire human labors or consulting companies to watch the surveillance video and extract useful marketing information. The video analyzers can assess how interested in the merchandise the customers are by observing their behaviors.                
+                <div class="title"><a href="interest/index.html">Estimation of Customer Interest Level Using Surveillance Camera for Marketing</a> 2015~</div>
+                <div class="abstract">We constructed a visual system to recognize customer action and interest during the shopping process</div>
+            </div>
+
+    </div><!-- /#research -->
+
+    <div id="footer" class="clearfix">
+      <div id="address">
+        <span class="bold">Institute of Industrial Science, University of Tokyo, Center for Socio-Global Informatics</span><br />
+        <!--<span class="bold">Institute of Industrial Science, University of Tokyo, Center for Information Fusion</span><br />-->
+        4-6-1 Komaba,Meguro-ku,Tokyo 〒153-8505  TEL: 03-5452-6273
+      </div>
+      <div style="both:clear;"></div>
+      <div align="right" style="margin-top:50px;margin-right:5em;" >
+        <span><font size="-1" color="#aaaaaa">&copy; Kamijo Lab.</font></span>
+      </div>
+    </div>  <!-- /#footer -->
+  </div><!-- /#container -->
+</div><!-- /#wrapper -->
+</body>
+</html>

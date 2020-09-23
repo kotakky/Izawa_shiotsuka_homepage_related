@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang=”ja”>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="東京大学大学院の上條研究室のウェブサイト">
+<meta name="keywords" content="上條研究室,上條俊介,東京大学,ITS,自動運転,GPS">
+<title>研究概要 - 東京大学 上條研究室: ITS, 自動運転, GPS</title>
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/research.css">
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="container">
+    <div id="header">
+      <a href="index.html" title="上條研究室"><h1>上條研究室</h1></a>
+      <ul id="gmenu">
+        <li><a href="research.html">研 究 概 要</a></li>
+        <li><a href="publications.html">発 表 文 献</a></li>
+        <!--<li><a href="research/stmrf.html">S-T MRF技術</a></li>-->
+        <li><a href="access.html">ア ク セ ス</a></li>
+        <li><a href="linkforstudents.html">学 生 向 け リ ン ク</a></li>
+        <li><a href="linkforcommittee.html">学 会 関 連 リ ン ク</a></li>
+      </ul>
+      <ul id="smenu">
+        <li><a href="e_research.html">English</a></li>
+        <li>　</li>
+      </ul>
+    </div><!-- /#header -->
+
+    <div id="research" style="margin-top:20px;">
+	
+	<div class="area">Personal Mobility and Location Based Services</div>
+
+        <div class="theme", id="smart devices"></div>
+        <div class="detail">
+
+          <div class="title"><a href="pdr/index.html">モバイル端末を用いた歩行者自己位置推定</a> 2012~</div>
+          <div class="abstract">スマートフォンに標準的に搭載されている加速度センサや磁気センサを用い、歩行動作（歩幅、進行方向）を検出し、加算的に歩行者の相対位置推定(歩行者デッドレコニングを行います。さらに、GPSとの融合により、高精度な自己位置推定を行います。</div>
+          
+          <div class="title"><a href="localization/wifi_fp.html">WiFi-Fingerprintingによる位置推定の精度改善</a> 2015~</div>
+          <div class="abstract">WiFi-Fingerprintingのキャリブレーションの際に使用されるリファレンスデータはGNSS測位に基づくものが多いため、当研究室の3Dマップを用いた高精度なGNSS測位法を用いることで、WiFi-FPの精度向上を目指します。</div>
+
+		  <div class="title"><a href="wearable/index.html">ウェアラブル端末を用いた歩行者ナビゲーション</a> 2016~</div>
+          <div class="abstract">「メガネ型のウェアラブル端末」で、当研究室の歩行者自己位置推定手法と画像マッチング技術を組み合わせて、高精度な自己位置推定を行います。さらに、ＡＲ技術を応用して新しいナビゲーション体験の提供を目指します。</div>
+
+		  <div class="title"><a href="DDR/index.html">Driving Data Recording (DDR) system</a> 2016~</div>
+          <div class="abstract"></div>
+
+        </div>
+		
+		<div class="image">
+          <img src="wearable/img/WP01.jpg" height="140"/>
+          <img src="images/pdr.jpg" height="140"/>
+        </div>
+		
+      <div class="area">Autonomous Driving - 自動運転</div>
+
+        <div class="theme", id="self_localization">Self-localization - 自己位置推定</div>
+        <div class="detail">自動運転や高度交通システム(ITS)やスマートフォンアプリケーションにおいて、自己の位置を正確に知ることは非常に重要です。このテーマでは、特に都市部における自己位置推定に焦点を当て、GPSをはじめとするGNSS(衛星測位システム: Global Navigation Satellite System)や慣性センサなど車載/モバイル端末センサなどを用いて、高精度な位置推定が可能な手法の確立を目指しています。
+
+          <div class="title"><a href="gps/index.html">都市部における3次元地図を用いたGNSSの精度改善</a> 2012~</div>
+          <div class="abstract">都市部においてGNSSの主要な誤差となっているマルチパスとNLOS伝搬遅延を3次元地図とレイトレーシング法を用いて補正します。さらに、Multi-GNSSやL1-SAIF信号情報なども用いてより高精度な位置推定を行います。</div>
+
+          <div class="title"><a href="gps/heightaided.html">高さ情報を用いたGNSSの精度改善</a> 2014~</div>
+          <div class="abstract">GNSS測位において高さ方向のエラーと水平方向のエラーの間に強い相関性が見られるため、高度情報からGNSS測位結果の高さ方向のエラーを推定し、それを用いて水平方向の測位結果を修正します。</div>
+
+          <div class="title"><a href="localization/sensorintegration.html">都市部におけるセンサインテグレーションによる自車両位置推定</a> 2014~</div>
+          <div class="abstract">車速センサやジャイロセンサなどをGNSS測位と融合させ、より高精度な車両の自己位置推定を行います。</div>
+
+        </div>
+        <div class="image">
+          <img src="images/gnss_ray.jpg" height="130"/>
+          <img src="images/sensor_fusion.jpg" height="140"/>
+        </div>
+
+        <br>
+
+        <div class="theme", id="scenario_understanding">Scenario Understanding - センシング/状況認識</div>
+        <div class="detail">自動運転や先進運転支援システム(ADAS)を考える上で、歩行者/自転車などの交通弱者の安全性の確保は不可欠です。当研究室ではこのテーマに対して、歩行者や自転車の検出から行動認識にわたる様々なレイヤーにアプローチしています。
+
+          <div class="title"><a href="research/pedonboard.html">車載画像センサによる歩行者検知</a></div>
+          <div class="abstract"><a href="research/stmrf.html">時空間MRFモデル(ST-MRF)</a>を用いた前景物体抽出とHOG特徴量などを用いた物体識別アルゴリズムを組み合わせ、車載カメラ映像から歩行者のみの検出を行います。</div>
+
+          <div class="title"><a href="sensing/poseestimation.html">車載カメラを用いた歩行者/自転車の識別と姿勢推定</a></div>
+          <div class="abstract">歩行者と自転車を識別した上で、HOG特徴量やSVM、拘束条件を用いて、注意/進行方向を表す頭部/胴部姿勢を推定します。</div>
+
+          <div class="title"><a href="rssi/index.html">車載電波センサによる歩行者検知</a> 2011~2015</div>
+          <div class="abstract">歩車間通信における電波強度(RSSI)を元に、車両に対する歩行者の相対位置を推定します。</div>
+
+          <div class="title"><a href="sensing/pedbehavior.html">信号交差点における歩行者横断行動認識</a> 2014~</div>
+          <div class="abstract">信号交差点シーンにおける様々なコンテキストを考慮したモデルによって、急に駆け込みや停止し得る歩行者行動の認識/予測を行います。</div>
+
+        </div>
+        <div class="image">
+          <img src="research/image/pedonboard/L075_02-001_15f_VGA.jpg" height="150"/>
+          <img src="images/head_body_orientation.PNG" height="150"/>
+          <img src="images/pedestrian_behavior.png" height="150"/>
+        </div>
+
+        <br>
+
+        <div class="theme", id="3d_map">3D Map - 3次元地図</div>
+        <div class="detail">3次元地図はカメラやレーザーシステムを用いた自己位置推定法や当研究室の高精度なGNSS測位法において必要不可欠であり、3次元地図の精度は自己位置推定結果に大きな影響を与えます。このテーマでは、3次元地図の生成や修正方法について研究しています。
+
+          <div class="title"><a href="map/reconstruction_pc_2d.html">3次元点群と2次元地図を用いた3次元建物地図生成</a> 2014~</div>
+          <div class="abstract">MMSによって収集される巨大な3次元点群データから建物の2次元境界を抽出し、よりシンプルかつ必要十分な情報を含む3次元地図を生成する手法について研究しています。</div>
+
+          <div class="title"><a href="map/correction_gnss.html">GNSS測位を利用した3次元地図の高精度化</a> 2014~</div>
+          <div class="abstract">3次元地図に含まれる建物の2次元境界の位置の誤差を、当研究室のGNSS測位法を用いて修正する手法について研究しています。</div>
+
+        </div>
+        <div class="image">
+          <img src="images/3d_point_cloud.JPG" height="150"/>
+          <img src="images/3D_flame_map.jpg" height="150"/>
+        </div>
+
+      <br>
+
+      <div class="area">Traffic Infrastructure - 交通インフラ</div>
+      
+        <div class="theme">Traffic Surveillance - 交通監視</div>
+        <div class="detail">
+          近年，道路交通環境にも多くの監視カメラが設置され、交通流の計測や事故等の交通事象の検出が行われています．当研究室では、人の手作業に頼らずこうした監視カメラ画像から自動的に意図する情報を抽出する技術の研究を行ってきました。
+
+          <div class="title"><a href="research/ts.html">交通流計測</a></div>
+          <div class="abstract">オクルージョンにも屈強なトラッキング手法を用い、方向別統計量・平均速度・交通密度などの交通事象に関する統計量を自動的に取得するシステムを開発しました。</div>
+
+          <div class="title"><a href="research/rt.html">交通異常事象監視</a></div>
+          <div class="abstract">交通流監視において、カメラ映像入力と画像処理技術の活用により、事故、渋滞、停止車両、落下物のような交通事象をリアルタイムに検出するシステムを構築しました。 </div>
+
+        </div>
+
+        <div class="image">
+          <img src="research/image/ts/freq_path.jpg" height="150"/>
+          <img src="research/image/rt/acc_1_3.jpg" height="150"/>
+        </div>
+
+        <br>
+
+        <div class="theme">Traffic Signal Control - 交通信号制御</div>
+        <div class="detail">従来の交通信号制御は，サイクル長やスプリットといったパラメータが定められており，交通閑散時も赤信号によって不必要な待ち時間が発生するという問題がありました．これに対し、当研究室では路車協調型の交差点制御方法を研究してきました。
+
+          <div class="title"><a href="signals/isc.html">画像センサーを活用した交差点信号制御</a></div>
+          <div class="abstract">車両と歩行者の計測機能を集約した先進的な画像センサが、車両用/歩行者用信号スプリットを最適化に有用であることを提案しました。</div>
+
+        </div>
+
+        <div class="image">
+          <img src="signals/img/13_Hibiya.jpg" height="150"/>
+        </div>
+
+       <div class="area">Deep Learning/Multimedia System - 深層学習/マルチメディアシステム</div>
+      
+<!--         <div class="theme">Smartphone - スマートフォン</div>
+        <div class="detail">
+          当研究室ではGPSに限らず、近年多くのモバイル端末に標準的に搭載されている加速度センサ、磁気センサを用いることで、都市部でも高精度な歩行者位置推定技術の研究を行っています。ユーザーに現在位置を知らせるにとどまらず、現在位置に応じて通りがかりの店舗のセール情報を通知することなどが可能になります。
+
+          <div class="title"><a href="pdr/index.html">モバイル端末を用いた行動推定</a> 2012~</div>
+          <div class="abstract">スマートフォンに標準的に搭載されている加速度センサや磁気センサを用い、歩行動作（歩幅、進行方向）を検出し、加算的に歩行者の相対位置推定(歩行者デッドレコニングを行います。さらに、GPSとの融合により、高精度な自己位置推定を行います。</div>
+
+          <div class="title"><a href="pdr/index.html">ウェアラブル端末を用いた自己位置推定</a> 2015~</div>
+          <div class="abstract"></div>
+        </div>
+        <div class="image">
+          <img src="images/pdr.jpg" height="150"/>
+        </div> -->
+
+        <div class="theme">Surveillance Camera - セキュリティ/マーケティングカメラ</div>
+        <div class="detail">
+          近年，駅や小売店などに、セキュリティやマーケティング調査を目的として、膨大な数の監視カメラが設置されています．しかし、人海戦術によるこれらの監視や解析には限界があります。当研究室では、監視カメラ画像から自動的に有用な情報を抽出する技術の研究を行っています。
+
+          <div class="title"><a href="demo_ped/index.html">人物行動把握</a> 2010~2013</div>
+          <div class="abstract">オブジェクトの姿勢情報と位置情報を組み合わせることで駅構内における人物の行動把握フレームワークの構築を行いました。</div>
+
+          <div class="title"><a href="marketing/index.html">マーケティング映像における人物姿勢認識</a> 2012~2013</div>
+          <div class="abstract">小売店などに設置されるカメラから顧客の姿勢を推定する手法について研究を行ってきました。</div>
+
+          <div class="title"><a href="marketing/customerbehavior.html">マーケティング映像における人物行動認識</a> 2014~</div>
+          <div class="abstract">小売店などに設置されるカメラから顧客の商品に対する関心/行動を推定する手法について研究を行っています。</div>
+
+        </div>
+		
+		<div class="theme">Generative adversarial networks - 敵対的生成ネットワーク</div>
+        <div class="detail">
+
+          <div class="title"><a href="GAN/index.html">Generative adversarial networks </a> 2017~</div>
+          <div class="abstract"></div>
+
+        </div>
+		
+		<div class="image">
+			<img src="demo_ped/framework.png" height="170"/>
+			<img src="GAN/divergent.png" height="200"/>
+        </div>
+
+    </div><!-- /#research -->
+
+    <div id="footer" class="clearfix">
+      <div id="address">
+        <span class="bold">東京大学　生産技術研究所　ソシオグローバル情報工学研究センター</span> <br />
+        <!-- old@20130827
+          <span class="bold">東京大学　生産技術研究所</span> <br />
+          <span>戦略情報融合国際研究センター</span> <br />
+          <span>ソシオグローバル情報工学研究センター</span> <br />
+        -->
+        〒153-8505 東京都 目黒区 駒場4-6-1  TEL: 03-5452-6273
+      </div>
+      <div style="both:clear;"></div>
+      <div align="right" style="margin-top:50px;margin-right:5em;" >
+        <span><font color="#aaaaaa">&copy; 上條研究室</font></span>
+      </div>
+    </div><!-- /#footer -->
+  </div><!-- /#container -->
+</div><!-- /#wrapper -->
+</body>
+</html>
