@@ -1802,6 +1802,15 @@ p.section_count {
     line-height: 70px;
 }
 
+p.section_count_forstudents {
+    font-size: 100px;
+    margin: 0 30px 0 0;
+    color: #61892F;
+    font-weight: 400;
+    line-height: 70px;
+}
+
+
 .padding_0 {
 	padding: 0;
 }
