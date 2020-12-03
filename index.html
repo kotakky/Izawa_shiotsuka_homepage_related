@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang=”ja”>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-style-type" content="text/css" />
+  <meta http-equiv="content-script-type" content="text/javascript" />
+  <meta name="description" content="東京大学大学院の上條研究室のウェブサイト">
+  <meta name="keywords" content="上條研究室,上條俊介,東京大学,ITS,自動運転,GPS">
+  <title>東京大学 上條研究室: ITS, 自動運転, GPS</title>
+
+  <base target="_top">
+
+  <link rel=”stylesheet” type=”text/css” href=”css/reset.css”>
+  <!–[if lt IE 9]>
+  <script src=”http://html5shim.googlecode.com/svn/trunk/html5.js”></script>
+  <![endif]–>
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/ext.css">
+  <link rel="stylesheet" type="text/css" href="css/research.css">
+  <script src="js/iepngfix.js" type="text/javascript"></script>
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      $('.menuholder').hover(function(){
+          $(this).children('.menu_inner').show();
+          $(this).children('.menu_inner').children('ul').animate( { opacity:'1.0' }, { duration:'fast' } );
+        },function(){
+          $(this).children('.menu_inner').children('ul').animate( { opacity:'0.0' }, { duration:'fast' } );
+      });
+      $('.menuholder').children('.menu_inner').children('ul').children('li').hover(
+        function(){
+          $(this).toggleClass( 'onhover' );
+        }
+      );
+      $('#update_history_fold_switch').click(
+        function(){
+          $('#update_history_holder').children().toggleClass( 'unfolded' );
+          $('#update_history_unfold').slideToggle( 'fast' );
+        }
+      );
+    });
+  </script>
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="container">
+    <div id="header">
+      <a href="index.html" title="上條研究室"><h1>上條研究室</h1></a>
+      <ul id="gmenu">
+        <li><a href="research.html">研 究 概 要</a></li>
+        <li><a href="publications.html">発 表 文 献</a></li>
+        <!--<li><a href="research/stmrf.html">S-T MRF技術</a></li>-->
+        <li><a href="access.html">ア ク セ ス</a></li>
+        <li><a href="linkforstudents.html">学 生 向 け リ ン ク</a></li>
+        <li><a href="linkforcommittee.html">学 会 関 連 リ ン ク</a></li>
+      </ul>
+      <ul id="smenu">
+        <li><a href="e_index.html">English</a></li>
+        <li>　</li>
+      </ul>
+    </div><!-- /#header -->
+
+    <div id="contents">
+      <h2> </h2>
+	  </br>
+	  </br>
+	  </br>
+     <p class="alignC pt30"><img src="img/copy.png" /></p>
+	 <!-- pt30 bt42b"-->
+
+	  <div id="ad">Application Of Portable And Wearable Smart Device For Consumer Electronic</div>
+
+      <section>
+        <div id="others">コンシューマ向けのスマートプロダクトやウェアラブルデバイスの活用
+      </section>
+
+    <div id="research" align="center" style="margin-top:20px;">
+    <!-- <hr color="#eeeeee" size=1> -->
+      <table border="0">
+
+        <tr>
+          <div class="theme"><a href="research.html#smart devices">Smart Devices - スマートデバイス</a></div>
+        </tr>
+        <tr>
+          <table>
+          <tr>
+          <td class="left"><a href="wearable/index.html"><img alt="" src="wearable/img/WP01.png" height=200 /></a></td>
+          <td class="right">
+            <div class="detail">
+              detail
+            </div>
+            <div class="topic_list">
+              <a href="pdr/index.html">モバイル端末を用いた歩行者自己位置推定</a><br>
+			  <a href="wearable/index.html">ウェアラブル端末を用いた歩行者ナビゲーション</a><br>
+        <a href="localization/wifi_fp.html">WiFi-Fingerprintingによる位置推定の精度改善</a><br>
+			  <a href="DDR/index.html">Driving Data Recording (DDR) system</a><br>
+            </div>
+          </td>
+          </tr>
+          </table>
+        </tr>
+
+        </table>
+      </div><!-- /#research -->
+
+
+      <div id="ad">For Autonomous Driving</div>
+
+      <section>
+        <div id="others">当研究室は自動車の<strong>自動運転</strong>の実現に向けた研究を行っています。
+      </section>
+
+
+    <div id="research" align="center" style="margin-top:20px;">
+    <!-- <hr color="#eeeeee" size=1> -->
+      <table border="0">
+
+        <tr>
+          <div class="theme"><a href="research.html#self_localization">Self-Localization - 自己位置推定</a></div>
+        </tr>
+        <tr>
+          <table>
+          <tr>
+          <td class="left"><a href="research/pedonboard.html"><img alt="" src="research_image/3d_gnss.jpg" height=170 /></a></td>
+          <td class="right">
+            <div class="detail">
+              自動運転や高度交通システム(ITS)、スマートフォンアプリケーションにおいて、自己の位置を正確に知ることは非常に重要です。このテーマでは、特に都市部における自己位置推定に焦点を当て、GPSをはじめとするGNSSや慣性センサなど車載/モバイル端末センサなどを用いて、高精度な位置推定が可能な手法の確立を目指しています。
+            </div>
+            <div class="topic_list">
+              <a href="gps/index.html">都市部における3次元地図を用いたGNSSの精度改善</a><br>
+              <a href="gps/heightaided.html">高さ情報を用いたGNSSの精度改善</a><br>
+              <a href="localization/sensorintegration.html">都市部におけるセンサインテグレーションによる自車両位置推定</a><br>
+            </div>
+          </td>
+          </tr>
+          </table>
+        </tr>
+        <tr>
+          <div class="theme"><a href="research.html#scenario_understanding">Scenario Understanding - センシング/状況認識</a></div>
+        </tr>
+        <tr>
+          <table>
+          <tr>
+          <td class="left"><a href="research.html#scenario_understanding"><img alt="" src="research_image/pedbehavior.png" height=180 /></a></td>
+          <td class="right">
+            <div class="detail">
+              安全かつ潤滑な交通を実現する自動運転や先進運転支援システム(ADAS)を考える上で、車両周囲をセンシングし、車両の置かれている状況を認識することが必須となります。当研究室では特に歩行者/自転車などの交通弱者の安全性確保に向けて、検出から行動認識にわたる様々なレイヤーへアプローチしています。
+            </div>
+            <div class="topic_list">
+              <a href="research/pedonboard.html">車載カメラを用いた歩行者検知</a><br>
+              <a href="sensing/poseestimation.html">車載カメラを用いた歩行者/自転車の識別と姿勢推定</a><br>
+              <a href="rssi/index.html">車載電波センサを用いた歩行者検知</a><br>
+              <a href="sensing/pedbehavior.html">交通シーンにおける歩行者行動モデル</a><br>
+            </div>
+          </td>
+          </tr>
+          </table>
+        </tr>
+        <tr>
+          <div class="theme"><a href="research.html#3d_map">3D Map - 3次元地図</a></div>
+        </tr>
+        <tr>
+          <table>
+          <tr>
+          <td class="left"><a href="research.html#3d_map"><img alt="" src="research_image/3d_map1.png" height=160/><img alt="" src="research_image/3d_map2.png"  height=160/></a></td>
+          <td class="right">
+            <div class="detail">
+              3次元地図はカメラやレーザーシステムを用いた自己位置推定法や当研究室の高精度なGNSS測位法において必要不可欠であり、3次元地図の精度は自己位置推定結果に大きな影響を与えます。このテーマでは、3次元地図の生成や修正方法について研究しています。
+            </div>
+            <div class="topic_list">
+              <a href="map/reconstruction_pc_2d.html">3次元点群と2次元地図を用いた3次元建物地図生成</a><br>
+              <a href="map/correction_gnss.html">GNSS測位を利用した3次元地図の高精度化</a><br>
+              <br>
+              <br>
+            </div>
+          </td>
+          </tr>
+          </table>
+        </tr>
+
+        </table>
+      </div><!-- /#research -->
+
+      <section>
+        <div id="others">詳しい内容やその他のトピックに関しては<a href="research.html">研究概要</a>をご覧ください。</div>
+      </section>
+
+      <section>
+        <div id="detail">
+        　当研究室は、東京大学駒場リサーチキャンパス(駒場Ⅱキャンパス)内生産研究所にあり、情報理工学研究科電子情報学専攻および情報学環・学際情報学府先端表現情報学コースに所属しています。修士8名、博士5名、研究員2名(2016年4月より)。中国人をはじめとしてたくさんの留学生が在籍し、国際色豊かなメンバーになっています。年に一度キャンパス公開がある他、見学も随時受け付けています。ご希望の方はご連絡ください。
+        </div>
+      </section>
+
+      <section>
+        <div id="scope"><a href="research/scope.html">平成26年度SCOPE研究成果「三次元地図データとマルチGNSSを活用したurban canyonにおける測位精度向上」について</a></div>
+      </section>
+
+      <!-- 画像下部 -->
+<!--      <div align="right" style="margin-right:5em;">
+        <p class="cap">※吹き出しをクリックすると詳細をご覧いただけます</p>
+      </div> -->
+
+      <!-- <div style="clear:both;"></div> -->
+      <!-- 回り込解除 -->
+
+
+    <!-- update history -->
+    <div id="update_history" align="center"><!-- whole content holder -->
+      <div id="update_history_holder" align="right"><!-- align right holder -->
+        <span id="update_history_fold_switch">&gt;&gt;LastUpdate : 2015/03/02</span><!-- title -->
+        <div id="update_history_unfold"><!-- folded content -->
+          <table id="update_history_table">
+            <tr>
+              <td>
+                2016/03/02<br />
+                2015年度の研究成果を追加しました。
+                各ページを更新しました。
+              </td>
+            </tr>
+            <tr>
+              <td>
+                2015/01/21<br />
+                発表文献に2014年発表文献を追加しました。
+              </td>
+            </tr>
+            <tr>
+              <td>
+                2014/01/21<br />
+                「交通信号制御」の内容を追加しました．
+              </td>
+            </tr>
+            <tr>
+              <td>
+                2013/11/25<br />
+                「都市部におけるGNSSの精度改善」，「モバイル端末を用いた行動推定」，<br />
+                「マーケティング映像における人物姿勢認識」等の研究詳細を追加しました．
+              </td>
+            </tr>
+            <tr>
+              <td>
+                2013/10/29<br />
+                研究概要の一部注意書きを変更しました．
+              </td>
+            </tr>
+            <tr>
+              <td>
+                2013/08/27<br />
+                発表文献に2013年発表文献(to appear)を追加しました。
+              </td>
+            </tr>
+            <tr>
+              <td>
+                2013/04/23<br />
+                メニュー「学会・委員会活動」を追加しました。
+              </td>
+            </tr>
+            <tr>
+              <td>
+                2013/03/29<br />
+                発表文献に2012年発表文献を追加しました。
+              </td>
+            </tr>
+            <tr>
+              <td>
+                2013/03/25<br />
+                トップページを更新しました。
+                研究概要に「マーケティング映像における人物姿勢推定」を追加しました。
+              </td>
+            </tr>
+            <tr>
+              <td>
+                2013/03/12<br />
+                トップページを更新しました。
+                研究概要を追加しました。
+              </td>
+            </tr>
+            <tr>
+              <td>
+                2012/10/02<br />
+                ホームページ全体のレイアウトを変更しました。
+              </td>
+            </tr>
+            <!-- History Holder : back end
+            -->
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- close update history -->
+
+
+      <!-- /#contents -->
+    </div>
+
+
+    <div id="footer" class="clearfix">
+      <div id="address">
+        <span class="bold">東京大学　生産技術研究所　ソシオグローバル情報工学研究センター</span> <br />
+        <!-- old@20130827
+          <span class="bold">東京大学　生産技術研究所</span> <br />
+          <span>戦略情報融合国際研究センター</span> <br />
+          <span>ソシオグローバル情報工学研究センター</span> <br />
+        -->
+        〒153-8505 東京都 目黒区 駒場4-6-1  TEL: 03-5452-6273
+      </div>
+      <div style="both:clear;"></div>
+      <div align="right" style="margin-top:50px;margin-right:5em;" >
+        <span><font color="#aaaaaa">&copy; 上條研究室</font></span>
+      </div>
+    </div><!-- /#footer -->
+  </div><!-- /#container -->
+</div><!-- /#wrapper -->
+</body>
+</html>
