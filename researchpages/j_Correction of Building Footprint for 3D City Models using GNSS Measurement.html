@@ -91,11 +91,11 @@
                         <div class="heading_main text_align_left">
 						   <div class="col-md-3">
 						     <!--p class="section_count">01</p-->
-                 <img width="100%" height='80%'src="../img/researchhome/AD/self-localization.png" alt="#">
+                 <img width="100%" height='100%'src="../img/researchpages/AD/Generation and application of 3D map/Correction of Building Footprint for 3D City Models using GNSS Measurement/04.jpg" alt="#">
 						   </div>
 						   <div class="col-md-9">
-						    <p class="small_tag">自己位置推定</p>
-                            <h2>都市部における<span class="theme_color">3次元地図</span>を用いた<br>GNSSの精度改善</h2>
+						    <p class="small_tag">3次元地図生成とその応用</p>
+                            <h2>GNSS測位を利用した<br><span class="theme_color">3次元地図</span>の高精度化</h2>
                           </div>
                         </div>
                     </div>
@@ -103,21 +103,28 @@
             </div>
 
             <div class="row margin-top_30">
-            <p>都市部における衛星測位システム（GNSS）の利用において、現在最も大きな誤差の要因となっているものはマルチパスおよびNLOS伝搬である。 
-            マルチパスとなっている衛星を推定し測位計算から除くことによって、衛星測位の精度を高めることができる。 
-            しかし、単純に衛星を除く場合、高層ビル街のような環境において、可視衛星数が極端に減少するという問題が生じる。 
-            そのため当研究室では、衛星を計算から取り除くのではなく、それ自身を指標として用いて正解位置の探索を行う手法を提案している。 
-            3次元地図およびレイトレーシングを用いたNLOS伝搬信号の識別および遅延誤差距離の推定手法を考案し、これをもとに探索を行っている。 
-            今後は残っている誤差要因の究明を行っていき、更なる精度および測位率の改善を目指す。</p>
+            <h2>概要</h2>
+            <p>近年、高度交通システム(ITS)の分野において自動運転の実現へ向けた様々な研究、開発がなされている。この自動運転の実現には、高精度な地図を整備することが非常に重要であり、自動運転の為の高精度地図の研究も盛んに行われている。特に、走行経路上のオブジェクトの三次元構造を記録した三次元地図については、自動車の自己位置推定では欠かせないものとなってきている。
+                このような高精度な三次元地図を整備する上で注目されている手法の一つに、LiDARによる測位データと車両の自己位置推定技術を組み合わせて、三次元地図を整備する手法（Mobile Mapping System; MMS）がある。LiDARは建物等の幾何学的形状を正確にマッピングすることが可能である一方、これらによって測定された建物の絶対位置を決定するには、車両の自己位置推定を高精度に行わなければならない。しかし、周辺に建物が多数存在するような環境下においては、車両の正確な自己位置を推定することは難しい。その結果、MMSによって測定された地図をそのまま絶対座標上で見ると、複数の観測データ間で大きな位置のずれが発生する。MMSではこの位置のずれを補正するために、手作業によって測量された基準点を多数用いてキャリブレーションを行う必要がある。
+                そこで本研究においては、GPSをはじめとしたGNSSの測位データを用いて、壁面の絶対位置を直接推定する手法について提案する。周辺に建物が多数存在するような場所では、時折GNSSの搬送波が建物に反射して受信機に届く。このような反射波をレイトレーシング法によりシミュレーションし、観測された反射波と、シミュレーションされた反射波の差を計算することで、壁面の真の位置を推定することができる。この手法を用いることで、従来手作業によって決定されていた壁面の絶対位置座標を、自動的に推定し、効率化/コスト削減が可能となる。
+                本手法により推定された壁面の絶対位置は、MMSの測定データを元にキャリブレーションにより正確に推定された壁面の絶対位置と比較した際、平均して1m以下の精度で一致することが実験結果により示された。</p>
+            
+                <h2>参考文献</h2>
+                <p>
+                Y. Wada, L.T. Hsu, T. Gu, S. Kamijo,
+                “Correction of Building Footprint for 3D City Models using GPS NLOS Measurement”,
+                ISGNSS 2015, Japan. Nov, 2015.
+                </p>
+                <h2>参考資料（発表資料より抜粋）</h2>
             </div>
-            <div class="heading_main text_align_left"><h3>参考文献</h3></div>
+                
             <div class="row margin-top_30">
 
               <div class="col-sm-6 col-md-4">
                  <div class="research_pics">
-                    <a href="../img/researchpages\AD\self-localization/GNSS Error Correction Using 3D Maps in Urban Canyons\GNSS Error Correction Using 3D Maps in Urban Canyons1.jpg">
+                    <a href="../img/researchpages/AD/Generation and application of 3D map/Correction of Building Footprint for 3D City Models using GNSS Measurement/01.jpg">
                       <div class="service_icons">
-                      <img width="100%" src="../img/researchpages\AD\self-localization/GNSS Error Correction Using 3D Maps in Urban Canyons\GNSS Error Correction Using 3D Maps in Urban Canyons1.jpg" alt="#">
+                      <img width="100%" src="../img/researchpages/AD/Generation and application of 3D map/Correction of Building Footprint for 3D City Models using GNSS Measurement/01.jpg" alt="#">
                      </div>
                      </a>
                 </div>
@@ -125,9 +132,9 @@
 
                <div class="col-sm-6 col-md-4">
                   <div class="research_pics">
-                     <a href="../img/researchpages\AD\self-localization/GNSS Error Correction Using 3D Maps in Urban Canyons\GNSS Error Correction Using 3D Maps in Urban Canyons2.jpg">
+                     <a href="../img/researchpages/AD/Generation and application of 3D map/Correction of Building Footprint for 3D City Models using GNSS Measurement/02.jpg">
                        <div class="service_icons">
-                       <img width="100%" src="../img/researchpages\AD\self-localization/GNSS Error Correction Using 3D Maps in Urban Canyons\GNSS Error Correction Using 3D Maps in Urban Canyons2.jpg" alt="#">
+                       <img width="100%" src="../img/researchpages/AD/Generation and application of 3D map/Correction of Building Footprint for 3D City Models using GNSS Measurement/02.jpg" alt="#">
                       </div>
                       </a>
                  </div>
@@ -135,25 +142,50 @@
 
                <div class="col-sm-6 col-md-4">
                   <div class="research_pics">
-                     <a href="../img/researchpages\AD\self-localization/GNSS Error Correction Using 3D Maps in Urban Canyons\GNSS Error Correction Using 3D Maps in Urban Canyons3.jpg">
+                     <a href="../img/researchpages/AD/Generation and application of 3D map/Correction of Building Footprint for 3D City Models using GNSS Measurement/03.jpg>
                        <div class="service_icons">
-                       <img width="100%" src="../img/researchpages\AD\self-localization/GNSS Error Correction Using 3D Maps in Urban Canyons\GNSS Error Correction Using 3D Maps in Urban Canyons3.jpg" alt="#">
+                       <img width="100%" src="../img/researchpages/AD/Generation and application of 3D map/Correction of Building Footprint for 3D City Models using GNSS Measurement/03.jpg" alt="#">
                       </div>
                       </a>
                  </div>
-               </div>
+               
 
                <div class="col-sm-6 col-md-4">
                   <div class="research_pics">
-                     <a href="../img/researchpages\AD\self-localization/GNSS Error Correction Using 3D Maps in Urban Canyons\GNSS Error Correction Using 3D Maps in Urban Canyons4.jpg">
+                     <a href="../img/researchpages/AD/Generation and application of 3D map/Correction of Building Footprint for 3D City Models using GNSS Measurement/04.jpg">
                        <div class="service_icons">
-                       <img width="100%" src="../img/researchpages\AD\self-localization/GNSS Error Correction Using 3D Maps in Urban Canyons\GNSS Error Correction Using 3D Maps in Urban Canyons4.jpg" alt="#">
+                       <img width="100%" src="../img/researchpages/AD/Generation and application of 3D map/Correction of Building Footprint for 3D City Models using GNSS Measurement/04.jpg" alt="#">
                       </div>
                       </a>
                  </div>
                </div>
-        </div>
+            </div>
+<!--                
+               <div class="col-sm-6 col-md-4">
+                    <div class="research_pics">
+                       <a href="../img/researchpages/AD/self-localization/self-localization using 2D map and LiDAR/self-localization using 2D map and LiDAR5.jpg">
+                         <div class="service_icons">
+                         <img width="100%" src="../img/researchpages/AD/self-localization/self-localization using 2D map and LiDAR/self-localization using 2D map and LiDAR5.jpg" alt="#">
+                        </div>
+                        </a>
+                   </div>
+                </div>
 
+                <div class="col-sm-6 col-md-4">
+                    <div class="research_pics">
+                       <a href="../img/researchpages/AD/self-localization/self-localization using 2D map and LiDAR/self-localization using 2D map and LiDAR6.jpg">
+                         <div class="service_icons">
+                         <img width="100%" src="../img/researchpages/AD/self-localization/self-localization using 2D map and LiDAR/self-localization using 2D map and LiDAR6.jpg" alt="#">
+                        </div>
+                        </a>
+                   </div> -->
+                
+
+                
+
+
+
+     
 
 
 
@@ -167,21 +199,22 @@
   			    <div class="service_blog">
               <a href="http://google.com">
                 <div class="service_icons">
-  					     <img width="100%" src="../img/home/Customer-Behaviour3.jpg" alt="#">
+  					     <img width="100%" height="50%" src="../img/researchpages/AD/Generation and application of 3D map/3D Building Map Reconstruction by Integrating Airborne Laser Point Cloud with 2D Boundary map/map_6.jpg" alt="#">
   					    </div>
                </a>
   					<div class="full service_title">
-  					   <h4>CustomerBehaviour Analysis</h4>
+  					   <h4>3次元点群と2次元地図を用いた
+                             <br>3次元建物地図生成</h4>
   					</div>
   					<div class="full service_text">
-  					  <p>Analyzing customer context including behavior and location in the real shop is important
-                 as they can be highly utilized for marketing strategies. In this work, a customer context analysis system
-                 that combines context-based map matching and activity recognition using smartphone
-                 built-in sensors is proposed.  </p>
+  					  <p>3次元点群のみを用いた3次元建物形状の再構成は、建物境界の決定が難しくなるため、
+                        建物の密集する都市部では難しい。
+                        そこで、上空からスキャンした3次元点群と2次元の建物境界地図を組み合わせた
+                        3次元建物地図の再構成手法を提案する。 </p>
   					</div>
   				 </div>
 			   </div>
-
+<!-- 
          <div class="col-sm-6 col-md-4">
   			    <div class="service_blog">
               <a href="http://google.com">
@@ -216,7 +249,7 @@
                  pedestrian self-localization. In addition, we use AR technology and aim to provide new navigation experience.</p>
   					</div>
   				 </div>
-			   </div>
+			   </div> -->
 
 			</div>
         </div>

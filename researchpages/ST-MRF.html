@@ -91,11 +91,11 @@
                         <div class="heading_main text_align_left">
 						   <div class="col-md-3">
 						     <!--p class="section_count">01</p-->
-                 <img width="100%" height='80%'src="../img/researchhome/AD/self-localization.png" alt="#">
+                 <img width="100%" height='80%'src="../img/researchpages\AD\Estimation of PedestrianCyclist/Pedestrian Detection by On-board Vision Sensor\ST-MRF0.jpg" alt="#">
 						   </div>
 						   <div class="col-md-9">
-						    <p class="small_tag">自己位置推定</p>
-                            <h2>都市部における<span class="theme_color">3次元地図</span>を用いた<br>GNSSの精度改善</h2>
+						    <p class="small_tag">歩行者/自転車の認識と予測</p>
+                            <h2>時空間Markov Random Field <><span class="theme_color">(MRF)</span>モデル</h2>
                           </div>
                         </div>
                     </div>
@@ -103,123 +103,66 @@
             </div>
 
             <div class="row margin-top_30">
-            <p>都市部における衛星測位システム（GNSS）の利用において、現在最も大きな誤差の要因となっているものはマルチパスおよびNLOS伝搬である。 
-            マルチパスとなっている衛星を推定し測位計算から除くことによって、衛星測位の精度を高めることができる。 
-            しかし、単純に衛星を除く場合、高層ビル街のような環境において、可視衛星数が極端に減少するという問題が生じる。 
-            そのため当研究室では、衛星を計算から取り除くのではなく、それ自身を指標として用いて正解位置の探索を行う手法を提案している。 
-            3次元地図およびレイトレーシングを用いたNLOS伝搬信号の識別および遅延誤差距離の推定手法を考案し、これをもとに探索を行っている。 
-            今後は残っている誤差要因の究明を行っていき、更なる精度および測位率の改善を目指す。</p>
+            <p>時空間MRFモデルとは，時空間画像を領域分割するための確率モデルのことである．
+                    従来から, 2次元(空間)静止画像の領域分割にMarkov Random Fieldモデルが提案され, その有用性が示されている. 
+                    これに対し, 時空間MRFモデルは, 時空間画像の時間軸方向の相関関係に着目し, MRFモデルを時空間モデルとして拡張したものである. 
+                    通常の空間Markov Random Fieldモデルは, 画素ごとに領域分割を行うものが多い. 
+                    時空間MRFモデルでも原理的には同様であるが, 実際には画像フレーム間で車両等は数画素〜数十画素移動するため, 画素ごとに領域分割を行うことは困難である. 
+                    そこで, 時空間MRFでは, 8画素×8画素で定義されるブロックを単位として領域分割を行うこととし, 画像フレーム間で有するブロックごとの動きベクトルを参照した時間軸方向の相関を定義することとした. 
+                    さらに, 確率緩和モデルを適用することにより, オクルージョンの場合でも移動物体の境界を最適解として求めることが出来る.
+                    例えば, 画像が640画素×480画素で構成されている場合, 80ブロック×60ブロックに関する領域ID分布を求めることとなる. 
+                    その際, 以下のような最適化パラメータを設定して各ブロックがどの領域に属するかを決定する. 結果として重なった移動物体同士の境界領域が正しく求まれば, オクルージョンに頑強なトラッキングを行ったことになる.
+                    時空間MRFモデルは，あくまでも物体の移動ベクトルにのみ着目して領域分割するものであり，対象とする物体の種類に依存しない．
+                    なお，アルゴリズムや最適化のためのパラメータの詳細については，下記の論文を御参照ください．</p>
             </div>
-            <div class="heading_main text_align_left"><h3>参考文献</h3></div>
+
             <div class="row margin-top_30">
 
               <div class="col-sm-6 col-md-4">
                  <div class="research_pics">
-                    <a href="../img/researchpages\AD\self-localization/GNSS Error Correction Using 3D Maps in Urban Canyons\GNSS Error Correction Using 3D Maps in Urban Canyons1.jpg">
+                    <a href="../img/researchpages\AD\Estimation of PedestrianCyclist/Pedestrian Detection by On-board Vision Sensor\ST-MRF1.jpg">
                       <div class="service_icons">
-                      <img width="100%" src="../img/researchpages\AD\self-localization/GNSS Error Correction Using 3D Maps in Urban Canyons\GNSS Error Correction Using 3D Maps in Urban Canyons1.jpg" alt="#">
+                      <img width="100%" src="../img/researchpages\AD\Estimation of PedestrianCyclist/Pedestrian Detection by On-board Vision Sensor\ST-MRF1.jpg" alt="#">
                      </div>
                      </a>
                 </div>
               </div>
 
-               <div class="col-sm-6 col-md-4">
-                  <div class="research_pics">
-                     <a href="../img/researchpages\AD\self-localization/GNSS Error Correction Using 3D Maps in Urban Canyons\GNSS Error Correction Using 3D Maps in Urban Canyons2.jpg">
-                       <div class="service_icons">
-                       <img width="100%" src="../img/researchpages\AD\self-localization/GNSS Error Correction Using 3D Maps in Urban Canyons\GNSS Error Correction Using 3D Maps in Urban Canyons2.jpg" alt="#">
-                      </div>
-                      </a>
+              <div class="col-sm-6 col-md-4">
+                    <div class="research_pics">
+                       <a href="../img/researchpages\AD\Estimation of PedestrianCyclist/Pedestrian Detection by On-board Vision Sensor\ST-MRF2.jpg">
+                         <div class="service_icons">
+                         <img width="100%" src="../img/researchpages\AD\Estimation of PedestrianCyclist/Pedestrian Detection by On-board Vision Sensor\ST-MRF2.jpg" alt="#">
+                        </div>
+                        </a>
+                   </div>
                  </div>
-               </div>
+                
+                 <div class="col-sm-6 col-md-4">
+                        <div class="research_pics">
+                           <a href="../img/researchpages\AD\Estimation of PedestrianCyclist/Pedestrian Detection by On-board Vision Sensor\ST-MRF3.jpg">
+                             <div class="service_icons">
+                             <img width="100%" src="../img/researchpages\AD\Estimation of PedestrianCyclist/Pedestrian Detection by On-board Vision Sensor\ST-MRF3.jpg" alt="#">
+                            </div>
+                            </a>
+                       </div>
+                     </div>
 
-               <div class="col-sm-6 col-md-4">
-                  <div class="research_pics">
-                     <a href="../img/researchpages\AD\self-localization/GNSS Error Correction Using 3D Maps in Urban Canyons\GNSS Error Correction Using 3D Maps in Urban Canyons3.jpg">
-                       <div class="service_icons">
-                       <img width="100%" src="../img/researchpages\AD\self-localization/GNSS Error Correction Using 3D Maps in Urban Canyons\GNSS Error Correction Using 3D Maps in Urban Canyons3.jpg" alt="#">
-                      </div>
-                      </a>
-                 </div>
-               </div>
-
-               <div class="col-sm-6 col-md-4">
-                  <div class="research_pics">
-                     <a href="../img/researchpages\AD\self-localization/GNSS Error Correction Using 3D Maps in Urban Canyons\GNSS Error Correction Using 3D Maps in Urban Canyons4.jpg">
-                       <div class="service_icons">
-                       <img width="100%" src="../img/researchpages\AD\self-localization/GNSS Error Correction Using 3D Maps in Urban Canyons\GNSS Error Correction Using 3D Maps in Urban Canyons4.jpg" alt="#">
-                      </div>
-                      </a>
-                 </div>
-               </div>
         </div>
 
 
-
-
-            <div class="row margin-top_30">
-              <div class="heading_main text_align_left"><h3>関連研究</h3></div>
-            </div>
-
-
-			<div class="row margin-top_30">
-			   <div class="col-sm-6 col-md-4">
-  			    <div class="service_blog">
-              <a href="http://google.com">
-                <div class="service_icons">
-  					     <img width="100%" src="../img/home/Customer-Behaviour3.jpg" alt="#">
-  					    </div>
-               </a>
-  					<div class="full service_title">
-  					   <h4>CustomerBehaviour Analysis</h4>
-  					</div>
-  					<div class="full service_text">
-  					  <p>Analyzing customer context including behavior and location in the real shop is important
-                 as they can be highly utilized for marketing strategies. In this work, a customer context analysis system
-                 that combines context-based map matching and activity recognition using smartphone
-                 built-in sensors is proposed.  </p>
-  					</div>
-  				 </div>
-			   </div>
-
-         <div class="col-sm-6 col-md-4">
-  			    <div class="service_blog">
-              <a href="http://google.com">
-                <div class="service_icons">
-  					     <img width="100%" src="../img/home/lifelog.jpg" alt="#">
-  					    </div>
-               </a>
-  					<div class="full service_title">
-  					   <h4>Lifelog using smartphone</h4>
-  					</div>
-  					<div class="full service_text">
-  					  <p>We use our pedestrian self-localization approach and image matching technique on
-                 "Eyeglass-type wearable device" to realize more accurate pedestrian self-localization.
-                 In addition, we use AR technology and aim to provide new navigation experience..</p>
-  					</div>
-  				 </div>
-			   </div>
-
-         <div class="col-sm-6 col-md-4">
-  			    <div class="service_blog">
-              <a href="http://google.com">
-                <div class="service_icons">
-  					     <img width="100%" src="../img/home/wearableglass.jpg" alt="#">
-  					    </div>
-               </a>
-  					<div class="full service_title">
-  					   <h4>Navigation using wearable glass</h4>
-  					</div>
-  					<div class="full service_text">
-  					  <p>We use our pedestrian self-localization approach
-                 and image matching technique on "Eyeglass-type wearable device" to realize more accurate
-                 pedestrian self-localization. In addition, we use AR technology and aim to provide new navigation experience.</p>
-  					</div>
-  				 </div>
-			   </div>
-
-			</div>
-        </div>
+        <h42>参考文献</h42><br>
+        S.Kamijo, Y.Matsushita,K.Ikeuchi, M.Sakauchi, "Traffic Monitoring and Accident Detection at Intersections," IEEE TRANSACTION on ITS, Vol.1 No.2, pp108-118.Jun.2000.<br>
+        上條俊介，松下康之，池内克史，坂内正夫, "時空間Markov Random Filedモデルによる隠れにロバストな車両トラッキング," 電子情報通信学会論文誌 D-II, Vol.J83-D-II No.12, pp2597-2609, 2000年12月.<br>
+        S.Kamijo, T.Nishida, M.Sakauchi, "Occlusion robust and Illumination Invariant Vehicle Tracking for Acquiring Detailed Statistics from Traffic Images," IEICE TRANSACTIONS on Information and Systems, Vol.E85-D, No.11, pp1753-1764, November 2002.<br>
+        上條俊介，坂内正夫, "時空間MRFモデルに基づく車両と歩行者の統一的トラッキング," 情報処理学会CVIM論文誌第10号,Vol.45 No.SIG 13(CVIM 10),54-63, 2004<br>
+            
+        <br>
+        <Hr>
+        時空間MRFは，あくまでも領域分割を行うアルゴリズムです． 従って，3次元情報/移動物体のクラス分け等の情報を得るために，それぞれのアプリケーションに則した様々なアルゴリズムを上位階層で組み合わせることが可能です．
+        ただし，車両交通や人物のモニタリングに際し，上位階層アルゴリズムを組み合わせるまでもなく，時空間MRFからの出力情報のみを用いるだけで目的が達せられる場合も多々あります．
+        詳しくは，当研究室までお問い合わせください．
+        <br><br>
     </div>
 	<!-- end section -->
 
