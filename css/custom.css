@@ -1,1 +1,81 @@
 /** ADD YOUR AWESOME CODES HERE **/
+
+.pb_title{
+	text-align: center;
+	margin: auto;
+  }
+
+
+h41 {
+	font-size: 13px;
+	color: #07528d;
+	/*margin-top: 25px;*/
+}
+
+h11 {
+	font-size: 30px;
+	color: #000000;
+}
+
+h12 {
+	font-size: 30px;
+	color: #529656;
+}
+
+mar_research{
+    margin: 0px 0px 1000px 0px;
+}
+
+
+h42 {
+    font-weight: bold;
+	font-size: 21px;
+	margin-top: 25px;
+}
+
+h43 {
+	color: #686b6e;
+    font-weight: bold;
+	font-size: 18px;
+}
+
+h44 {
+	color: #202020;
+    font-weight: bold;
+	font-size: 21px;
+	margin-top: 25px;
+}
+
+
+.hover-red:hover {
+    color: rgb(0, 0, 0);
+}
+
+.research_img {
+	width: 1000px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+  }
+  .research_img>img {
+	height: 200px;
+	width: 300px;
+	margin: 10px;
+  }
+.research_img4 {
+	width: 1150px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+  }
+  .research_img4>img {
+	height: 200px;
+	width: 270px;
+	margin: 5px;
+  }
+
+
+
+
+
+  
