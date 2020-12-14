@@ -1,5 +1,10 @@
 /** ADD YOUR AWESOME CODES HERE **/
 
+.pb_title {
+	margin: 0 auto;
+	text-align: center;
+  }
+
 h41 {
 	font-size: 13px;
 	color: #07528d;
